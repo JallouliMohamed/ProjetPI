@@ -1,0 +1,18 @@
+pi_homepage:
+    path:     /home
+    defaults: { _controller: piBundle:Default:home }
+admin_home:
+    path:     /admin/home
+    defaults: { _controller: piBundle:Default:homeAdmin }
+user_home:
+    path:     /user/home
+    defaults: { _controller: piBundle:Default:homeUser }
+fos_user_security_login:
+    path:      /
+    defaults:  { _controller: FOSUserBundle:Security:login, _method: POST }
+admin_profile:
+    path:     /admin/profile
+    defaults: { _controller: piBundle:Default:profileAdmin}
+user_profile:
+    path:     /user/profile
+    defaults: { _controller: piBundle:Default:profileUser}
